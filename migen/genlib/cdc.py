@@ -69,7 +69,7 @@ class PulseSynchronizer(Module):
 
         ###
 
-        toggle_i = Signal(reset_less=True)
+        toggle_i = Signal(reset_less=False)
         toggle_o = Signal()  # registered reset_less by MultiReg
         toggle_o_r = Signal(reset_less=True)
 
